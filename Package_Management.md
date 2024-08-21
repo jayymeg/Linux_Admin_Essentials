@@ -107,3 +107,5 @@ sudo yum upgrade # For older Red Hat systems
 OR
 
 sudo dnf upgrade # For newer Red Hat systems
+
+![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%201.png)
