@@ -109,3 +109,16 @@ OR
 sudo dnf upgrade # For newer Red Hat systems
 
 ![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%201.png)
+
+![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%202.png)
+
+![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%203.png)
+
+![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%204.png)
+
+![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%205.png)
+
+![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%206.png)
+
+![package managemnt](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%207.png)
+
