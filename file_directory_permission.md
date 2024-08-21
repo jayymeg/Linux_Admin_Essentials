@@ -95,10 +95,10 @@ Log in as the new owner (if applicable) and test access to the modified files an
 sudo su pistisuser
 
 cd /path/to/pistis
-https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%201.png
+(https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%201.png)
 
 
-https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%202.png
+(https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%202.png)
 
 
-https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%203.png
+(https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%203.png)
