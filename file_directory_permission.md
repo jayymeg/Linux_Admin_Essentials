@@ -99,7 +99,7 @@ cd /path/to/pistis
 ![files and directory permission](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%201.png)
 
 
-[file and directory permission](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%202.png)
+![file and directory permission](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%202.png)
 
 
-[file and directory permission](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%203.png)
+![file and directory permission](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%203.png)
