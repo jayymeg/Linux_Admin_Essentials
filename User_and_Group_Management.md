@@ -68,4 +68,5 @@ sudo groupdel newgroup
 
 ![user & group management image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/User%20%26%20Group%20Management/user%20and%20group%20management%201.png)
 
-![user & group management image](
+![user & group management image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/User%20%26%20Group%20Management/user%20and%20group%20management%202.png)
+
