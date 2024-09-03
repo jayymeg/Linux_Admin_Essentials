@@ -496,25 +496,25 @@ To secure this script, make sure it’s only accessible from trusted IP addresse
 ![my image3](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%203.png)
 
 
-![my image]()
+![my image4](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%204.png)
 
 
-![my image]()
+![my image5](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%205.png)
 
 
-![my image]()
+![my image6](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%206.png)
 
 
-![my image]()
+![my image7](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%207.png)
 
 
-![my image]()
+![my image8](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%208.png)
 
 
-![my image]()
+![my image9](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%209.png)
 
 
-![my image]()
+![my image10](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%2010.png)
 
 
 ![my image]()
