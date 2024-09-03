@@ -176,4 +176,7 @@ die();
 - Access the PHP script in your browser: http://your_domain_or_IP/todo_list.php
 
 
+**Conclusion
+You have successfully implemented a LAMP stack on your Ubuntu 22.04 server
+
 ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%2018.png)
