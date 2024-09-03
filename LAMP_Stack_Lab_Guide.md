@@ -210,7 +210,9 @@ Access the PHP script in your browser:
 ```
 http://your_domain_or_IP/todo_list.php
 ```
-```
+
+
+
 ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%201.png)
 
 
