@@ -213,4 +213,4 @@ http://your_domain_or_IP/todo_list.php
 ```
 
 
-![my image]('/c/Users/JOSEPH/Downloads/Linux_Admin_Essentials/LAMP Stack/lamp stack 1.png')
+![my image](LAMP Stack/lamp stack 1.png)
