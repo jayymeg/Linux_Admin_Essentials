@@ -174,3 +174,5 @@ die();
 }
 
 - Access the PHP script in your browser: http://your_domain_or_IP/todo_list.php
+
+![images](https://github.com/jayymeg/Linux_Admin_Essentials/tree/master/LAMP%20Stack)
