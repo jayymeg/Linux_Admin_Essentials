@@ -512,8 +512,6 @@ http://server_domain_or_IP/todo.php
 You should see a page displaying the contents of your `todo_list` table.
 
 
-```
-
 
 ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%201.png)
 
