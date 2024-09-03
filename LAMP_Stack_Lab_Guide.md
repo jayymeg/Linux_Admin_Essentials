@@ -210,7 +210,37 @@ Access the PHP script in your browser:
 ```
 http://your_domain_or_IP/todo_list.php
 ```
-```
 
 
-![my image](LAMP Stack/lamp stack 1.png)
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%201.png)
+
+
+![my image2](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%202.png)
+
+
+![my image3](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%203.png)
+
+
+![my image4](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%204.png)
+
+
+![my image5](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%205.png)
+
+
+![my image6](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%206.png)
+
+
+![my image7](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%207.png)
+
+
+![my image8](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%208.png)
+
+
+![my image9](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%209.png)
+
+
+![my image10](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%2010.png)
+
+
+![my image11](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%2011.png)
