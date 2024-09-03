@@ -485,3 +485,6 @@ You can now access this PHP script in your web browser:
 You should see a page displaying the contents of your todo_list table.
 
 To secure this script, make sure it’s only accessible from trusted IP addresses. You can do this by creating a new server block configuration in Nginx and using IP-based access control. Please review the Nginx access control documentation for details on how to set this up.
+
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%201.png)
