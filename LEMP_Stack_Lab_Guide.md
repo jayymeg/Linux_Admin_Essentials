@@ -488,3 +488,6 @@ To secure this script, make sure it’s only accessible from trusted IP addresse
 
 
 ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%201.png)
+
+
+![my image2](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%202.png)
