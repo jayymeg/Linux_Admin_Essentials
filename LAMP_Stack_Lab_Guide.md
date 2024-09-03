@@ -218,4 +218,4 @@ die();
 
 
 
-![images 11](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%2011.png)
+![11](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%2011.png)
