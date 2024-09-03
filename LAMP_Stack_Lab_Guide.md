@@ -175,24 +175,47 @@ die();
 
 - Access the PHP script in your browser: http://your_domain_or_IP/todo_list.php
 
-![images 1](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%201.png)
 
-![images 2](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%202.png)
 
-![images 3](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%203.png)
 
-![images 4](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%204.png)
+![image 1](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%201.png)
 
-![images 5](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%205.png)
 
-![images 6](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%206.png)
 
-![images 7](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%207.png)
+![image 2](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%202.png)
 
-![images 8](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%208.png)
 
-![images 9](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%209.png)
 
-![images 10](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%2010.png)
+![image 3](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%203.png)
+
+
+
+![image 4](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%204.png)
+
+
+
+![image 5](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%205.png)
+
+
+
+![image 6](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%206.png)
+
+
+
+![image 7](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%207.png)
+
+
+
+![image 8](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%208.png)
+
+
+
+![image 9](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%209.png)
+
+
+
+![image 10](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%2010.png)
+
+
 
 ![images 11](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Stack/lamp%20stack%2011.png)
