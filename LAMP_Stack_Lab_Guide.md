@@ -36,6 +36,7 @@ Install MySQL:
 ```bash
 sudo apt install mysql-server
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Steps/step%202.png)
 
 Secure your MySQL installation:
 
@@ -56,12 +57,13 @@ Exit the MySQL console:
 ```bash
 exit
 ```
-
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Steps/step%202(1).png)
 Run the MySQL security script:
 
 ```bash
 sudo mysql_secure_installation
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Steps/step%202(2).png)
 
 ## Step 3 — Installing PHP
 
@@ -70,6 +72,7 @@ Install PHP and the required modules:
 ```bash
 sudo apt install php libapache2-mod-php php-mysql
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Steps/step%203.png)
 
 ## Step 4 — Creating a Virtual Host for Your Website
 
@@ -122,6 +125,9 @@ Reload Apache:
 ```bash
 sudo systemctl reload apache2
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Steps/step%204.png)
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Steps/step%204(1).png)
 
 ## Step 5 — Testing PHP Processing on Your Web Server
 
@@ -138,12 +144,15 @@ Add the following PHP code:
 phpinfo();
 ?>
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Steps/step%205.png)
+
 
 Access the PHP info page in your browser:
 
 ```
 http://server_domain_or_IP/info.php
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Steps/step%205(1).png)
 
 After confirming PHP is working, remove the `info.php` file:
 
@@ -174,6 +183,7 @@ Exit the MySQL console:
 ```bash
 exit
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Steps/step%206.png)
 
 Create a PHP script to test database connection:
 
@@ -205,6 +215,7 @@ try {
 }
 ?>
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Steps/step%206(1).png)
 
 Access the PHP script in your browser:
 
@@ -212,4 +223,4 @@ Access the PHP script in your browser:
 http://your_domain_or_IP/todo_list.php
 ```
 
-
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LAMP%20Steps/step%206(2).png)
