@@ -38,6 +38,7 @@ Available applications:
   Nginx HTTPS
   OpenSSH
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%201.png)
 
 It is recommended that you enable the most restrictive profile that will still allow the traffic you need. Since you haven’t configured SSL for your server in this guide, you will only need to allow regular HTTP traffic on port 80. Enable this by typing:
 
@@ -81,12 +82,14 @@ As an alternative, you can check which IP address is accessible as viewed from o
 ```bash
 curl -4 icanhazip.com
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%201(1).png)
 
 Type the address that you receive in your web browser and it will take you to Nginx’s default landing page:
 
 ```
 http://server_domain_or_IP
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%201(2).png)
 
 If you see this page, it means you have successfully installed Nginx and enabled HTTP traffic for your web server.
 
@@ -101,6 +104,7 @@ sudo apt install mysql-server
 ```
 
 When prompted, confirm installation by typing `Y` and then `ENTER`.
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%202.png)
 
 When the installation is finished, it’s recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Start the interactive script by running:
 
@@ -137,6 +141,8 @@ Do you wish to continue with the password provided? (Press `y|Y` for Yes, any ot
 
 For the rest of the questions, press `Y` and hit the `ENTER` key at each prompt. This will remove some anonymous users and the test database, disable remote root logins, and load these new rules so that MySQL immediately respects the changes you have made.
 
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%202(2).png)
+
 When you’re finished, test if you’re able to log in to the MySQL console by typing:
 
 ```bash
@@ -169,6 +175,8 @@ exit
 
 Notice that you didn’t need to provide a password to connect as the `root` user even though you have defined one when running the `mysql_secure_installation` script. That is because the default authentication method for the administrative MySQL user is `unix_socket` instead of `password`. Even though this might look like a security concern at first, it makes the database server more secure because the only users allowed to log in as the root MySQL user are the system users with `sudo` privileges connecting from the console or through an application running with the same privileges. In practical terms, that means you won’t be able to use the administrative database root user to connect from your PHP application. Setting a password for the `root` MySQL account works as a safeguard in case the default authentication method is changed from `unix_socket` to `password`.
 
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%202(3).png)
+
 For increased security, it’s best to have dedicated user accounts with less expansive privileges set up for every database, especially if you plan on having multiple databases hosted on your server.
 
 **Note**: At the time of this writing, the native MySQL PHP library `mysqlnd` doesn’t support `caching_sha2_authentication`, the default authentication method for MySQL 8. For that reason, when creating database users for PHP applications on MySQL 8, you’ll need to make sure they’re configured to use `mysql_native_password` instead. We’ll demonstrate how to do that in Step 6.
@@ -186,6 +194,7 @@ To install the `php-fpm` and `php-mysql` packages, run:
 ```bash
 sudo apt install php-fpm php-mysql
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%203.png)
 
 When prompted, type `Y` and `ENTER` to confirm installation.
 
@@ -214,6 +223,7 @@ Then open a new configuration file in Nginx’s `sites-available` directory usin
 ```bash
 sudo nano /etc/nginx/sites-available/your_domain
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%204.png)
 
 This will create a new blank file. Paste in the following bare-bones configuration:
 
@@ -239,6 +249,7 @@ server {
     }
 }
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%204(1).png)
 
 Here’s what each of these directives and location blocks do:
 
@@ -291,6 +302,7 @@ Your new website is now active, but the web root `/var/www/your_domain` is still
 ```bash
 nano /var/www/your_domain/index.html
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%204(1).png)
 
 Include the following content in this file:
 
@@ -305,12 +317,14 @@ Include the following content in this file:
   </body>
 </html>
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%204(3).png)
 
 Now go to your browser and access your server’s domain name or IP address as listed within the `server_name` directive in your server block configuration file:
 
 ```
 http://server_domain_or_IP
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%204(4).png)
 
 You’ll see a page like this:
 
@@ -329,6 +343,7 @@ You can do this by creating a test PHP file in your document root. Open a new fi
 ```bash
 nano /var/www/your_domain/info.php
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%205.png)
 
 Type or paste the following lines into the new file. This is valid PHP code that will return information about your server:
 
@@ -337,6 +352,7 @@ Type or paste the following lines into the new file. This is valid PHP code that
 phpinfo();
 ?>
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%205(1).png)
 
 When you are finished, save and close the file by typing `CTRL+X` and then `y` and `ENTER` to confirm.
 
@@ -345,6 +361,7 @@ You can now access this page in your web browser by visiting the domain name or 
 ```
 http://server_domain_or_IP/info.php
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%205(2).png)
 
 You will see a web page containing detailed information about your server:
 
@@ -409,6 +426,7 @@ Notice the `-p` flag in this command, which will prompt you for the password use
 ```sql
 SHOW DATABASES;
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%206.png)
 
 This will give you the following output:
 
@@ -463,12 +481,14 @@ After confirming that you have valid data in your test table, you can exit the M
 ```bash
 exit
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%206(1).png)
 
 You can now create a PHP script to query the database and display its data. We’ll call this script `todo.php`:
 
 ```bash
 nano /var/www/your_domain/todo.php
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%206(2).png)
 
 Place the following content in that file:
 
@@ -501,6 +521,8 @@ try {
 
 Replace `example_database`, `example_user`, and `password` with the actual names you’ve assigned to your database and user, and the corresponding user password.
 
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%206(3).png)
+
 This script creates a PDO (PHP Data Object) connection to the MySQL database, fetches the contents of the `todo_list` table, and outputs them as an HTML list.
 
 You can now access this PHP script in your web browser:
@@ -508,64 +530,9 @@ You can now access this PHP script in your web browser:
 ```
 http://server_domain_or_IP/todo.php
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Steps/step%206(4).png)
 
 You should see a page displaying the contents of your `todo_list` table.
 
 
 
-![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%201.png)
-
-
-![my image2](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%202.png)
-
-
-![my image3](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%203.png)
-
-
-![my image4](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%204.png)
-
-
-![my image5](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%205.png)
-
-
-![my image6](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%206.png)
-
-
-![my image7](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%207.png)
-
-
-![my image8](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%208.png)
-
-
-![my image9](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%209.png)
-
-
-![my image10](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%2010.png)
-
-
-![my image11](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%2011.png)
-
-
-![my image12](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%2012.png)
-
-
-![my image13](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%2013.png)
-
-
-![my image14](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%2014.png)
-
-
-
-![my image15](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%2015.png)
-
-
-
-![my image16](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%2016.png)
-
-
-
-![my image17](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%2017.png)
-
-
-
-![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/LEMP%20Stack/lemp%2018.png)
