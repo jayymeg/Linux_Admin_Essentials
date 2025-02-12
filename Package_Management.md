@@ -8,6 +8,8 @@ Learn how to manage software packages on a Linux system using package management
 
 For this project, make use of a Vagrant Linux box and access it using vagrant ssh.
 
+![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%201.png)
+
 **Step 2: Open a Terminal**
 
 If you're not already in a terminal session, open a terminal window. You'll use this terminal to execute package management commands.
@@ -19,6 +21,8 @@ Before installing or updating packages, it's essential to update the package rep
 **For Debian/Ubuntu (apt):**
 
 sudo apt update
+
+![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%202.png)
 
 **For Red Hat-based systems (yum or dnf):**
 
@@ -35,6 +39,8 @@ To install a new package, use the appropriate command for your package manager. 
 **For Debian/Ubuntu (apt):**
 
 sudo apt install apache2
+
+![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%203.png)
 
 **For Red Hat-based systems (yum or dnf):**
 
@@ -59,6 +65,8 @@ sudo yum remove httpd # For older Red Hat systems
 OR
 
 sudo dnf remove httpd # For newer Red Hat systems
+
+![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%204.png)
 
 **Step 6: Search for Packages**
 
@@ -107,14 +115,6 @@ sudo yum upgrade # For older Red Hat systems
 OR
 
 sudo dnf upgrade # For newer Red Hat systems
-
-![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%201.png)
-
-![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%202.png)
-
-![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%203.png)
-
-![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%204.png)
 
 ![package management](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/package%20management/package%20management%205.png)
 
