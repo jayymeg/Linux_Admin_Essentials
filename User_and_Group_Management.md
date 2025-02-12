@@ -18,6 +18,9 @@ Create a new user using the useradd command. Replace newuser with the desired us
 
 sudo useradd newuser
 
+![user & group management image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/User%20%26%20Group%20Management/user%20and%20group%20management%201.png)
+
+
 **Step 4: Set a Password for the New User**
 
 Set a password for the new user using the passwd command:
@@ -66,7 +69,6 @@ To delete a group, use the groupdel command. Be cautious, as this will remove th
 
 sudo groupdel newgroup
 
-![user & group management image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/User%20%26%20Group%20Management/user%20and%20group%20management%201.png)
 
 ![user & group management image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/User%20%26%20Group%20Management/user%20and%20group%20management%202.png)
 
