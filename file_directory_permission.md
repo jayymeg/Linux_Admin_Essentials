@@ -12,6 +12,8 @@ For this project, make use of a Vagrant Linux box and access it using vagrant ss
 
 If you're not already in a terminal session, open a terminal window. You'll use this terminal to execute commands.
 
+![files and directory permission](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%201.png)
+
 **Step 3: Create and Navigate to the Directory**
 
 Create a new directory named pistis and navigate into it:
@@ -27,6 +29,9 @@ Create a sample file and directory to work with:
 touch example.txt
 
 mkdir exampledir
+
+
+![file and directory permission](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%202.png)
 
 **Step 5: List Files and Directories**
 
@@ -95,11 +100,5 @@ Log in as the new owner (if applicable) and test access to the modified files an
 sudo su pistisuser
 
 cd /path/to/pistis
-
-![files and directory permission](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%201.png)
-
-
-![file and directory permission](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%202.png)
-
 
 ![file and directory permission](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20and%20directory%20permission/file%20and%20directory%20permissions%203.png)
