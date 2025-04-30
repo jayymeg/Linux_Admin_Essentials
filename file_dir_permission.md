@@ -21,6 +21,7 @@ cd pistis
 ```
 
 ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20%26%20dir%20permission/L1.png)
+
 ---
 
 ### Step 3: Create Files and Directories
@@ -41,6 +42,8 @@ chmod u+rw example.txt
 ls -l
 ```
 
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20%26%20dir%20permission/L2.png)
+
 ---
 
 ### Step 5: Modify Directory Permissions
@@ -59,6 +62,8 @@ Run:
 ```bash
 sudo groupadd pistisgroup
 ```
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20%26%20dir%20permission/L3.png)
 
 ---
 
@@ -79,6 +84,8 @@ sudo chown pistisuser example.txt
 ls -l
 ```
 
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20%26%20dir%20permission/L4.png)
+
 ---
 
 ### Step 9: Change Directory Owner
@@ -98,6 +105,8 @@ Run:
 sudo chgrp pistisgroup example.txt
 ls -l
 ```
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20%26%20dir%20permission/L5.png)
 
 ---
 
@@ -120,6 +129,8 @@ cd exampledir
 exit
 ```
 
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20%26%20dir%20permission/L6.png)
+
 ---
 
 ### Step 13: Setuid, Setgid, and Sticky Bit
@@ -132,6 +143,8 @@ chmod +t exampledir
 ls -l example.txt
 ls -ld exampledir
 ```
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20%26%20dir%20permission/L7.png)
 
 ---
 
@@ -156,4 +169,5 @@ umask 0027
 touch newfile
 ls -l newfile
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20%26%20dir%20permission/L8.png)
 
