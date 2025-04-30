@@ -20,6 +20,7 @@ mkdir pistis
 cd pistis
 ```
 
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/file%20%26%20dir%20permission/L1.png)
 ---
 
 ### Step 3: Create Files and Directories
