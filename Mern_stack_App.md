@@ -27,9 +27,6 @@ ssh -i "your-key.pem" ubuntu@<EC2-Public-IP>
 ```bash
 # Update packages
 sudo apt update && sudo apt upgrade -y
-
-![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D5.png)
-
 # Install Node.js and npm
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs
@@ -39,6 +36,14 @@ sudo systemctl start mongodb
 # Install PM2 (process manager)
 sudo npm install -g pm2
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D5.png)
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D6.png)
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D7.png)
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D8.png)
+
 ---
 ### **Step 4: Deploy the MERN Application**
 **Clone your MERN app repository**:
@@ -51,6 +56,8 @@ sudo npm install -g pm2
    cd backend
    npm install
    ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D9.png)
+
 **Set environment variables** (e.g., MongoDB URI in `.env`):
    ```bash
    echo "MONGODB_URI=mongodb://localhost:27017/yourdb" > .env    ```
@@ -58,18 +65,24 @@ sudo npm install -g pm2
    ```bash
    pm2 start server.js --name "mern-backend"
    ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D10.png)
+
 **Build the React frontend**:
    ```bash
    cd ../frontend
    npm install
    npm run build
    ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D11.png)
+
 ---
 ### **Step 5: Configure Nginx as a Reverse Proxy**
 **Install Nginx**:
    ```bash
    sudo apt install -y nginx
    ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D12.png)
+
 **Create an Nginx config file**:
    ```bash
    sudo nano /etc/nginx/sites-available/mern
@@ -88,16 +101,23 @@ sudo npm install -g pm2
      }
    }
    ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D14.png)
+
 **Enable the config and restart Nginx**:
    ```bash
    sudo ln -s /etc/nginx/sites-available/mern /etc/nginx/sites-enabled/
    sudo systemctl restart nginx
    ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D13.png)
+
 ---
 ### **Step 6: Access the Application**
 Open your browser and visit: 
   `http://<EC2-Public-IP>`
 ---
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D15.png)
+
 ### **Troubleshooting Tips**
 Check PM2 logs: `pm2 logs mern-backend`.
 Test the backend API: `curl http://localhost:5000/api/test`.
