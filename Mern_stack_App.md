@@ -1,6 +1,11 @@
 **Simplest Way to Execute the MERN Stack Deployment on EC2:**
 ### **Step 1: Set Up an EC2 Instance**
 **Launch an EC2 Instance** (Ubuntu 22.04 LTS AMI).
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D1.png)
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D2.png)
+
 **Configure Security Group** to allow:
 SSH (Port 22)
 HTTP (Port 80)
@@ -12,11 +17,19 @@ Download the `.pem` key pair for SSH access.
 chmod 400 your-key.pem
 ssh -i "your-key.pem" ubuntu@<EC2-Public-IP>
 ```
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D3.png)
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D4.png)
+
 ---
 ### **Step 3: Install Dependencies**
 ```bash
 # Update packages
 sudo apt update && sudo apt upgrade -y
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Mern-App-EC2/D5.png)
+
 # Install Node.js and npm
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs
