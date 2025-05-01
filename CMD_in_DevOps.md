@@ -160,6 +160,9 @@ sudo ufw enable
 
 echo "System updated and firewall enabled."
 ```  
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/cmd%20in%20devops/M1.png)
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/cmd%20in%20devops/M2.png)
 
 #### **Steps**:  
 1. Save the script as `setup.sh` and make it executable:  
@@ -169,16 +172,23 @@ echo "System updated and firewall enabled."
 2. Run the script:  
    ```bash
    ./setup.sh
-   ```  
+   ```
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/cmd%20in%20devops/M3.png)
+
+   
 3. Schedule daily execution via cron:  
    - Open crontab:  
      ```bash
      crontab -e
-     ```  
+     ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/cmd%20in%20devops/M4.png)
+
    - Add this line to run at midnight:  
      ```bash
      0 0 * * * /path/to/setup.sh
      ```  
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/cmd%20in%20devops/M5.png)
 
 ---
 
@@ -189,8 +199,10 @@ echo "System updated and firewall enabled."
 1. Install `htop` for real-time monitoring:  
    ```bash
    sudo apt-get install -y htop
-   ```  
-2. Create the monitoring script (`monitor.sh`):  
+   ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/cmd%20in%20devops/M6.png)
+   
+3. Create the monitoring script (`monitor.sh`):  
    ```bash
    #!/bin/bash
 
@@ -198,18 +210,32 @@ echo "System updated and firewall enabled."
        echo "$(date) - CPU: $(top -bn1 | grep 'Cpu(s)' | awk '{print $2 + $4}')%, Memory: $(free | awk '/Mem/{printf "%.2f%", $3/$2*100}')" >> /var/log/system_metrics.log
        sleep 8
    done
-   ```  
-3. Make the script executable:  
+   ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/cmd%20in%20devops/M7.png)
+
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/cmd%20in%20devops/M8.png)
+
+
+4. Make the script executable:  
    ```bash
    chmod +x monitor.sh
-   ```  
-4. Run it in the background:  
+   ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/cmd%20in%20devops/M9.png)
+
+
+5. Run it in the background:  
    ```bash
    nohup ./monitor.sh &
    ```  
-5. View logs:  
+6. View logs:  
    ```bash
    tail -f /var/log/system_metrics.log
-   ```  
+   ```
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/cmd%20in%20devops/M10.png)
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/cmd%20in%20devops/M11.png)
+
 
 ---
