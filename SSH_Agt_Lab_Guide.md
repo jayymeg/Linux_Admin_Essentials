@@ -1,4 +1,4 @@
-### Step-by-Step Guide to generate and configure SSH keys using SSH Agent for secure passwordless access to GitHub.
+#### Step-by-Step Guide to generate and configure SSH keys using SSH Agent for secure passwordless access to GitHub.
 **Objective:** 
 Use SSH Agent to manage your SSH keys for secure, passwordless access to remote servers (e.g., GitHub).
 ---
@@ -67,6 +67,7 @@ If successful, you’ll see:
 You’ve configured SSH Agent to manage your keys. Now: 
 Your private key is secured with a passphrase but only needs to be entered once per session. 
 You can securely push/pull code to GitHub without passwords. 
-**Troubleshooting Tips**: 
+
+### **Troubleshooting Tips**: 
 Ensure the SSH agent is running (`eval "$(ssh-agent -s)"`). 
 Verify the public key on GitHub matches your local `id_rsa.pub`.
