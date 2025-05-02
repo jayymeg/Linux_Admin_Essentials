@@ -13,7 +13,16 @@ sudo fdisk -l  # Detailed disk information
 
 ---
 
-#### **2. Create a Partition**  
+#### **2. Edit your Vagrantfile:
+Add this block inside the Vagrant.configure block to attach a virtual disk: rebooting the vm after.
+
+```config.vm.provider "virtualbox" do |vb|
+  vb.customize ['createhd', '--filename', 'extra_disk.vdi', '--size', 10240] # 10 GB
+  vb.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', 'extra_disk.vdi']
+end
+```
+
+#### **3. Create a Partition**  
 Use `fdisk` to create a new partition on the target disk (e.g., `/dev/sdb`):  
 ```bash
 sudo fdisk /dev/sdb
@@ -26,7 +35,7 @@ sudo fdisk /dev/sdb
 
 ---
 
-#### **3. Format the Partition**  
+#### **4. Format the Partition**  
 Format the new partition (e.g., `/dev/sdb1`) with the **ext4 filesystem**:  
 ```bash
 sudo mkfs.ext4 /dev/sdb1   # Fixes "exx4" typo from the original document
@@ -34,7 +43,7 @@ sudo mkfs.ext4 /dev/sdb1   # Fixes "exx4" typo from the original document
 
 ---
 
-#### **4. Create Mount Point and Mount the Partition**  
+#### **5. Create Mount Point and Mount the Partition**  
 Create a directory to mount the partition and mount it:  
 ```bash
 sudo mkdir -p /mnt/mydisk  # Fixes "./mnt/mydisk" typo from the original document
@@ -43,7 +52,7 @@ sudo mount /dev/sdb1 /mnt/mydisk
 
 ---
 
-#### **5. Verify the Mount**  
+#### **6. Verify the Mount**  
 Confirm the partition is mounted:  
 ```bash
 df -h /mnt/mydisk  # Shows disk usage and mount status
@@ -53,7 +62,7 @@ lsblk /dev/sdb1    # Displays partition details
 
 ---
 
-#### **6. Add to /etc/fstab for Persistence**  
+#### **7. Add to /etc/fstab for Persistence**  
 Ensure the partition mounts automatically at boot by adding it to `/etc/fstab`:  
 ```bash
 echo '/dev/sdb1 /mnt/mydisk ext4 defaults 0 0' | sudo tee -a /etc/fstab  # Fixes malformed entry from the original document
