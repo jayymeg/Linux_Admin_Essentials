@@ -101,22 +101,30 @@ While Windows has its place in enterprise environments (especially for .NET appl
    sudo usermod -aG sudo jaymeg  # Add to sudo group if needed
    ```
 
+   ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/user%20mgt%20%26%20permission/B1.png)
+
 2. **Modifying file permissions**
    ```bash
    chmod 750 pistis/  # Owner: rwx, Group: r-x, Others: ---
    chmod 600 pistis/  # Only owner can read/write
    ```
 
+   ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/user%20mgt%20%26%20permission/B2.png)
+
 3. **Changing file ownership**
    ```bash
    sudo chown jaymeg pistis/
    ```
+
+   ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/user%20mgt%20%26%20permission/B3.png)
 
 4. **Verifying permissions**
    ```bash
    ls -l pistis/
    # Output shows permissions, owner, and group
    ```
+
+   ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/user%20mgt%20%26%20permission/B4.png)
 
 ### Security Benefits in DevOps:
 1. **Principle of Least Privilege**: Only grant necessary permissions to users/services
