@@ -97,24 +97,24 @@ While Windows has its place in enterprise environments (especially for .NET appl
 
 1. **Creating a new user**
    ```bash
-   sudo adduser devopsuser
-   sudo usermod -aG sudo devopsuser  # Add to sudo group if needed
+   sudo adduser jaymeg
+   sudo usermod -aG sudo jaymeg  # Add to sudo group if needed
    ```
 
 2. **Modifying file permissions**
    ```bash
-   chmod 750 /opt/myapp/  # Owner: rwx, Group: r-x, Others: ---
-   chmod 600 /opt/myapp/config.ini  # Only owner can read/write
+   chmod 750 pistis/  # Owner: rwx, Group: r-x, Others: ---
+   chmod 600 pistis/  # Only owner can read/write
    ```
 
 3. **Changing file ownership**
    ```bash
-   chown devopsuser:devopsgroup /opt/myapp/
+   chown jaymeg:devopsgroup pistis/
    ```
 
 4. **Verifying permissions**
    ```bash
-   ls -l /opt/myapp/
+   ls -l pistis/
    # Output shows permissions, owner, and group
    ```
 
