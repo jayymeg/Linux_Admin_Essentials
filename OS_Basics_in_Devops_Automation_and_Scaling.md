@@ -109,7 +109,7 @@ While Windows has its place in enterprise environments (especially for .NET appl
 
 3. **Changing file ownership**
    ```bash
-   chown jaymeg:devopsgroup pistis/
+   sudo chown jaymeg pistis/
    ```
 
 4. **Verifying permissions**
