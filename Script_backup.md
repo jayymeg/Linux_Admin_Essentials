@@ -34,17 +34,17 @@ fi
    mkdir -p backups
    ```
 
-Run the script to back up the entire current directory:  
+   Run the script to back up the entire current directory:  
    ```bash
    ./backup.sh . ./backups
    ```
 
-Verify the backup:  
+   Verify the backup:  
    ```bash
    ls -l ./backups
    ```
 
-4. **Schedule with Cron**  
+5. **Schedule with Cron**  
    Edit the crontab:  
    ```bash
    crontab -e
@@ -55,10 +55,10 @@ Verify the backup:
    ```
    - Replace `/path/to/backup.sh` with the actual script path.
 
-5. **Verify the Backup**  
+6. **Verify the Backup**  
    Check the backup directory:  
    ```bash
-   ls -l /mnt/backups
+   ls -l ~/backups
    ```
 
 ---
