@@ -31,9 +31,6 @@ fi
    chmod +x backup.sh
    ```
 
-   ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Script%20backup/A2.png)
-   
-
 3. **Test the Script**  
    Create a backup directory (if it doesn’t exist):  
    ```bash
@@ -45,12 +42,15 @@ fi
    ./backup.sh . ./backups
    ```
 
+    ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Script%20backup/A2.png)
+   
+
    Verify the backup:  
    ```bash
    ls -l ./backups
    ```
 
-4. **Schedule with Cron**  
+5. **Schedule with Cron**  
    Edit the crontab:  
    ```bash
    crontab -e
@@ -59,13 +59,19 @@ fi
    ```
    0 2 * * * /path/to/backup.sh /home/user/projects /mnt/backups
    ```
+
+    ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Script%20backup/A3.png)
+
+   
    - Replace `/path/to/backup.sh` with the actual script path.
 
-5. **Verify the Backup**  
+6. **Verify the Backup**  
    Check the backup directory:  
    ```bash
    ls -l ~/backups
    ```
+
+    ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Script%20backup/A4.png)
 
 ---
 
