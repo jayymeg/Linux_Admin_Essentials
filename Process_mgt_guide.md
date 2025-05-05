@@ -3,7 +3,7 @@
 
 ---
 
-#### **1. Start a Background Process**
+### **1. Start a Background Process**
 **Command**:    ```bash
   sleep 300 &
   ```  
