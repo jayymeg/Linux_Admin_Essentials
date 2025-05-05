@@ -10,7 +10,7 @@
 Runs `sleep 300` in the background (`&` ensures it runs in the background).  **Note**: The typo "Sleep 300 G" in the original file is incorrect; use lowercase `sleep`.
 ---
 
-#### **2. List Running Processes**
+### **2. List Running Processes**
 **Command**:    ```bash
   ps aux
   ```  
@@ -20,7 +20,7 @@ Lists **all running processes** with details (CPU, memory, PID, etc.).  Exampl
 
 ---
 
-#### **3. Kill a Process**
+### **3. Kill a Process**
 **Step 1: Find the PID of the `sleep` process**:    ```bash
   ps aux | grep sleep
   ```  
@@ -35,14 +35,14 @@ Filters processes to show only `sleep`.  Example output:      ```bash
 Replace `1234` with the actual PID.  Use `kill -9 1234` if the process refuses to terminate (force kill).
 ---
 
-#### **4. Monitor System Resources**
+### **4. Monitor System Resources**
 **Command**:    ```bash
   top
   ```  
 Displays real-time system resource usage (CPU, memory, processes).  Press `q` to exit.  **Note**: The original file mentions "RCP" — this is a typo; use `top`.
 ---
 
-#### **5. Change Process Priority**
+### **5. Change Process Priority**
 **Start a process with adjusted priority**:    ```bash
   nice -n 10 sleep 300 &
   ```  
