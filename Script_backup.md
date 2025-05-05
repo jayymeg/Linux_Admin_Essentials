@@ -22,11 +22,17 @@ fi
 1. **Create the Script**  
    Save the corrected code as `backup.sh`.
 
+   ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Script%20backup/A1.png)
+   
+
 2. **Make the Script Executable**  
    Fix the `chmod` typo and run:  
    ```bash
    chmod +x backup.sh
    ```
+
+   ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Script%20backup/A2.png)
+   
 
 3. **Test the Script**  
    Create a backup directory (if it doesn’t exist):  
@@ -44,7 +50,7 @@ fi
    ls -l ./backups
    ```
 
-5. **Schedule with Cron**  
+4. **Schedule with Cron**  
    Edit the crontab:  
    ```bash
    crontab -e
@@ -55,7 +61,7 @@ fi
    ```
    - Replace `/path/to/backup.sh` with the actual script path.
 
-6. **Verify the Backup**  
+5. **Verify the Backup**  
    Check the backup directory:  
    ```bash
    ls -l ~/backups
