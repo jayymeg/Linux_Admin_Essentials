@@ -4,9 +4,9 @@
 ---
 
 ### **1. Start a Background Process**
-**Command**:    ```bash
+**Command**:    ``bash
   sleep 300 &
-  ```  
+  ``  
 Runs `sleep 300` in the background (`&` ensures it runs in the background).  **Note**: The typo "Sleep 300 G" in the original file is incorrect; use lowercase `sleep`.
 ---
 
