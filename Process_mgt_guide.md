@@ -9,6 +9,8 @@
   ```  
 Runs `sleep 300` in the background (`&` ensures it runs in the background).  **Note**: The typo "Sleep 300 G" in the original file is incorrect; use lowercase `sleep`.
 
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/process%20mgt%20guide/G1.png)
+
 ---
 
 ### **2. List Running Processes**
@@ -18,6 +20,8 @@ Runs `sleep 300` in the background (`&` ensures it runs in the background).  *
 Lists **all running processes** with details (CPU, memory, PID, etc.).  Example output:      ```bash
     user   1234  0.0  0.1  12345 6789 pts/0  S    10:00   0:00 sleep 300
     ```
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/process%20mgt%20guide/G2.png)
 
 ---
 
@@ -35,6 +39,8 @@ Filters processes to show only `sleep`.  Example output:      ```bash
   ```  
 Replace `1234` with the actual PID.  Use `kill -9 1234` if the process refuses to terminate (force kill).
 
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/process%20mgt%20guide/G3.png)
+
 ---
 
 ### **4. Monitor System Resources**
@@ -42,6 +48,8 @@ Replace `1234` with the actual PID.  Use `kill -9 1234` if the process refuses
   top
   ```  
 Displays real-time system resource usage (CPU, memory, processes).  Press `q` to exit.  **Note**: The original file mentions "RCP" — this is a typo; use `top`.
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/process%20mgt%20guide/G4.png)
 
 ---
 
@@ -54,6 +62,8 @@ Starts `sleep 300` with a **nice value of 10** (lower priority).  Nice values 
   renice -n 5 -p 1234
   ```  
 Changes the nice value of PID `1234` to **5** (higher priority than 10).  Requires the target PID (replace `1234`).
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/process%20mgt%20guide/G5.png)
 
 ---
 
