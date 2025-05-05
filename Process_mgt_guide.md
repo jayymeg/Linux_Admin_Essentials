@@ -34,6 +34,7 @@ Filters processes to show only `sleep`.  Example output:      ```bash
   kill 1234
   ```  
 Replace `1234` with the actual PID.  Use `kill -9 1234` if the process refuses to terminate (force kill).
+
 ---
 
 ### **4. Monitor System Resources**
@@ -41,6 +42,7 @@ Replace `1234` with the actual PID.  Use `kill -9 1234` if the process refuses
   top
   ```  
 Displays real-time system resource usage (CPU, memory, processes).  Press `q` to exit.  **Note**: The original file mentions "RCP" — this is a typo; use `top`.
+
 ---
 
 ### **5. Change Process Priority**
@@ -52,10 +54,12 @@ Starts `sleep 300` with a **nice value of 10** (lower priority).  Nice values 
   renice -n 5 -p 1234
   ```  
 Changes the nice value of PID `1234` to **5** (higher priority than 10).  Requires the target PID (replace `1234`).
+
 ---
 
 ### **Key Notes**
 **Background Processes**: Always use `&` to run commands in the background.  **Killing Processes**: Use `kill <PID>` for graceful termination; `kill -9 <PID>` for force-kill.  **Priority**: Lower nice values = higher priority.  
 ### **Common Errors**
 Typing `Sleep` instead of `sleep` (Linux commands are case-sensitive).  Forgetting `&` when starting background processes.  Using `renice` without root privileges for negative nice values (e.g., `-5`).  
+
 --- 
