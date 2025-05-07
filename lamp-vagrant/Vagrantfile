@@ -1,0 +1,25 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Vagrantfile
+
+Vagrant.configure("2") do |config|
+    # Box settings
+    config.vm.box = "hashicorp/bionic64"  # Ubuntu 20.04 LTS box
+    config.vm.box_check_update = false  # Disable box update check
+ 
+    # Network settings
+    config.vm.network "forwarded_port", guest: 80, host: 8081  # Forward port 80 to 8080
+ 
+    # Provider-specific settings
+    config.vm.provider "virtualbox" do |vb|
+      vb.memory = "1024"  # Set VM memory to 1GB
+      vb.cpus = 2  # Set VM CPUs to 2
+    end
+ 
+    # Shell provisioner (optional - you can use other provisioners like Ansible, Chef, etc.)
+    config.vm.provision "shell", inline: <<-SHELL
+      sudo apt-get update
+      sudo apt-get install -y apache2
+    SHELL
+  end
