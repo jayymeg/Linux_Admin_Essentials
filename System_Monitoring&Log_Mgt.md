@@ -1,0 +1,62 @@
+---
+### **1. Monitor System Performance**
+Install `htop` (not `http`) to monitor resources:
+```bash
+sudo apt install htop
+htop  # View CPU, memory, and process usage in real-time.
+```
+---
+### **2. Check Disk Usage**
+Use `df` and `du` to analyze disk space:
+```bash
+df -h          # Check overall disk usage.
+du -sh /home   # Check total size of the /home directory.
+```
+---
+### **3. Set Up Log Rotation**
+Configure log rotation for `/var/log/m/app.log`:
+Create a logrotate configuration file:
+   ```bash
+   sudo nano /etc/logrotate.d/myapp
+   ```
+Add the following configuration (corrected syntax):
+   ```conf
+   /var/log/m/app.log {
+       daily
+       missingok
+       rotate 7
+       compress
+       delaycompress
+       notifempty
+       create 640 root adm  # Fix: Permissions (640), owner (root), group (adm)
+   }
+   ```
+Test the configuration:
+   ```bash
+   sudo logrotate -vf /etc/logrotate.d/myapp
+   ```
+---
+### **4. Analyze Logs for Errors**
+Search for "error" entries in system logs:
+```bash
+grep "error" /var/log/syslog  # Replace "syslog" with your log file if needed.
+```
+---
+### **5. Set Up Disk Usage Alerts**
+Create a cron job to check disk usage every 10 minutes:
+Edit the cron table:
+   ```bash
+   crontab -e
+   ```
+Add this line (corrected command):
+   ```bash
+   */10 * * * * df -h | awk '$5 > 90 {print $1 " is at " $5}' | mail -s "Disk Usage Alert" admin@example.com
+   ```
+Replace `admin@example.com` with your email.
+Ensure `mailutils` is installed for email alerts (`sudo apt install mailutils`).
+---
+### **Summary of Fixes**
+Replaced `http` with `htop` for monitoring.
+Corrected `create 0G40 root adm` → `create 640 root adm` in logrotate.
+Fixed the cron command syntax and replaced `hal1` with `mail`.
+Clarified ambiguous instructions (e.g., `id` is unrelated to disk usage).
