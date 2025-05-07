@@ -48,16 +48,25 @@ network:
       nameservers:
         addresses: [8.8.8.8, 8.8.4.4]
 ```
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Network_Config%26Troubleshooting/V2.png)
+
 **Apply changes:**
 ```bash
 sudo netplan apply
 ```
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Network_Config%26Troubleshooting/V3.png)
+
 ---
 ## STEP 5: Test Network Connectivity
 ```bash
 ping -c 4 192.168.1.1
 ping -c 4 google.com
 ```
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Network_Config%26Troubleshooting/V4.png)
+
 ---
 ## STEP 6: Capture Network Traffic
 ```bash
@@ -66,6 +75,9 @@ sudo tcpdump -i eth1 -w capture.pcap
 # To read the file:
 tcpdump -r capture.pcap
 ```
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Network_Config%26Troubleshooting/V5.png)
+
 ---
 ## STEP 7: Set Up a Firewall
 ```bash
@@ -73,11 +85,17 @@ sudo ufw allow ssh
 sudo ufw allow http
 sudo ufw enable
 ```
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Network_Config%26Troubleshooting/V6.png)
+
 ---
 ## STEP 8: Troubleshoot DNS
 ```bash
 dig google.com
 ```
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Network_Config%26Troubleshooting/V7.png)
+
 ---
 **Note:** This configuration uses Ubuntu Bionic (18.04 LTS). For newer Ubuntu versions, adjust the Netplan configuration syntax if needed.
 ```
