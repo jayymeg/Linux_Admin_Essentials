@@ -22,6 +22,13 @@ if (( $(echo "$CPU_USAGE > 50" | bc -l) )); then
     echo "High CPU Usage: $CPU_USAGE%" | mail -s "CPU Alert" your-email@example.com
 fi
 ```
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Advance%20shell%20scripting/O1.png)
+
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Advance%20shell%20scripting/O2.png)
+
+
 **2. Make Executable:**
 ```bash
 chmod +x health_check.sh
@@ -30,10 +37,14 @@ chmod +x health_check.sh
 ```bash
 crontab -e
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Advance%20shell%20scripting/O3.png)
+
 Add this line to run hourly and log results:
 ```cron
 0 * * * * /path/to/health_check.sh >> /var/log/health_check.log 2>&1
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Advance%20shell%20scripting/O4.png)
+
 **Key Improvements:**
 Proper CPU load calculation using `uptime`
 Accurate CPU percentage calculation for alerts
@@ -44,6 +55,9 @@ Added proper error redirection in cron job
 **Notes:**
 Replace `your-email@example.com` with your actual email
 Ensure `mailutils` is installed for email notifications
+
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Advance%20shell%20scripting/O5.png)
+
 Verify cron service is running
 Check `/var/log/health_check.log` for output
 **Verification:**
@@ -51,3 +65,4 @@ Check `/var/log/health_check.log` for output
 ./health_check.sh  # Test manually first
 sudo tail -f /var/log/health_check.log  # Check scheduled runs
 ```
+![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/Advance%20shell%20scripting/O6.png)
