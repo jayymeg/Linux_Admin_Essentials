@@ -1,4 +1,3 @@
----
 ### **1. Monitor System Performance**
 Install `htop` (not `http`) to monitor resources:
 ```bash
