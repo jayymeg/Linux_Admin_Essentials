@@ -17,8 +17,10 @@ Example Output:
      ```
      Your identification has been saved in /home/user/.ssh/id_rsa 
      Your public key has been saved in /home/user/.ssh/id_rsa.pub 
+ 
      ```
 ---
+
 #### **Step 2: Add the Private Key to SSH Agent**
 Start the SSH Agent in the background: 
    ```bash
@@ -32,7 +34,9 @@ Add your private key to the agent:
 ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/SSH%20Lab%20Guide/S2.png)
 
 If you set a passphrase, enter it once. The agent will remember it for future sessions. 
+
 ---
+
 #### **Step 3: Copy the Public Key to GitHub**
 Display your public key using: 
    ```bash
@@ -48,8 +52,11 @@ Add details:
 **Title**: Name the key (e.g., "My Laptop"). 
 **Key**: Paste the copied public key. 
 Click **Add SSH Key**. 
+
 ---
+
 ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/SSH%20Lab%20Guide/S4.png)
+
 
 #### **Step 4: Test SSH Connection to GitHub**
 Run: 
@@ -61,6 +68,7 @@ If successful, you’ll see:
    Hi [your_username]! You’ve successfully authenticated...
    ```
 ---
+
 ![my image](https://github.com/jayymeg/Linux_Admin_Essentials/blob/master/SSH%20Lab%20Guide/S5.png)
 
 #### **Conclusion**
